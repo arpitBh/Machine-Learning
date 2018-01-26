@@ -40,7 +40,7 @@ def regularized_linear_regression(X, y, lambd):
   #####################################################
   #				 YOUR CODE HERE					#
   #####################################################		
-  # assistance from: Karthik Rajendran
+
   I_size = X.shape[1]
   I = np.identity(I_size)
   w = np.linalg.inv((X.T).dot(X) + lambd*I).dot(X.T).dot(y)
