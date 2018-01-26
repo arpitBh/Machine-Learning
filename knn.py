@@ -52,7 +52,7 @@ def predict_labels(k, ytrain, dists):
 	#####################################################
 	#				 YOUR CODE HERE					#
 	#####################################################
-	# assistance from: Karthik Rajendran
+	
 	ypred = np.zeros((dists.shape[0]))
 	for i in range(len(ypred)):
 		argmins = np.argsort(dists[i])[:k]
